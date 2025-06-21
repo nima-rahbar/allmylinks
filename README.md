@@ -4,7 +4,7 @@ A modern, responsive web app to showcase all your important links in one place, 
 
 ## 🌐 Live Demo
 
-[View the app](https://allmylinks.nimaarahbar.com/)
+[View the app](https://allmylinks.nimarahbar.com/)
 
 ---
 
