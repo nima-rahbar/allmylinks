@@ -1,62 +1,90 @@
-<h1 align="center">
-    <img src="https://ik.imagekit.io/4qca61gsh/mylinks.png?updatedAt=1716647213797">
-    
-   
-</h1>
+# All My Links
 
-# Link to the app
+A modern, responsive web app to showcase all your important links in one place, with light and dark theme support.
 
-[My Links](https://allmylinks-lucascampos.vercel.app/)
+## 🌐 Live Demo
 
-# 🔍 Summary
-
-- [About](#-sobre)
-- [Tech Stack](#-tecnologias-utilizadas)
-- [How to download](#-como-baixar-o-projeto)
-
-## 📗 About
-
-A page where all my links are stored, with a dark theme and of course depending on the user's browser, responsive and modern design.
+[View the app](https://allmylinks.nimaarahbar.com/)
 
 ---
 
-## 💻 Functionalities
+## 📋 Table of Contents
 
-- Responsiveness (Mobile First)
-- Improved UI/UX
-- Light and dark theme
-
----
-
-## 🚀 Technologies used
-
-The project was developed using the following technologies
-
-- React.js
-- JavaScript
-- Tailwind CSS
-- Figma
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [License](#license)
 
 ---
 
-## 🎮 How to download
+## 📝 About
+
+This project is a personal links page built with React and Tailwind CSS. It features a clean, mobile-first design, theme switching (light/dark), and smooth user experience. The app displays a profile, bio, and a set of social and professional links.
+
+---
+
+## ✨ Features
+
+- Responsive design (mobile-first)
+- Light and dark theme toggle
+- Animated profile image loading
+- Social and professional links with icons
+- Modern UI/UX
+
+---
+
+## 🛠️ Tech Stack
+
+- [React.js](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [Lucide React Icons](https://lucide.dev/)
+- [react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component)
+- [CryptoJS](https://github.com/brix/crypto-js)
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and install dependencies:
 
 ```bash
+git clone https://github.com/lucascmpos/allmylinks.git
+cd allmylinks
+npm install
+npm run dev
+```
 
-    # Clone the repository
-    $ git clone https://github.com/lucascmpos/allmylinks/
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
-    # Install the dependencies
-    $ npm i
+---
 
-    # Started the project
-    $ npm run dev
+## 📁 Project Structure
+
+```
+allmylinks/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+└── ...
 ```
 
 ---
 
-Developed by 🐉 Lucas Campos
-# allmylinks
-# allmylinks
-# allmylinks
-# allmylinks
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Developed by Nima Rahbar
