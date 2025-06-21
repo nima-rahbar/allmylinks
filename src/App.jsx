@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import sha256 from 'crypto-js/sha256';
 import {
   Book,
   Facebook,
@@ -21,6 +22,10 @@ function App() {
   const toggleTheme = () => {
     setIsLightMode((prevMode) => !prevMode);
   };
+
+  const hashedEmail = sha256( 'nima.rahbar@gmail.com' );
+  const gravatarUrl = `https://www.gravatar.com/avatar/${hashedEmail}?s=400`;
+
 
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
@@ -54,8 +59,11 @@ function App() {
     >
       <div className="flex items-center justify-center flex-col w-full gap-2">
         <LazyLoadImage
-          src="https://media.licdn.com/dms/image/v2/C4E03AQGMaya6mheQkQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1637487537060?e=1738800000&v=beta&t=JZLK7zHfouxWM2DSjVgY3pWlzr1WeQx7TWrV8vOIfZw"
+          id="gravatar-image"
+          src={gravatarUrl}
+
           effect="blur"
+          alt="Nima Rahbar"
           className={`rounded-full size-36 object-cover border-2 ${
             isLightMode ? "border-black/70" : "border-white/70"
           } `}
